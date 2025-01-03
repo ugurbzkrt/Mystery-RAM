@@ -1,5 +1,7 @@
 FROM python:3.9
-COPY app.py /app/app.py
+COPY ramd.py /app/ramd.py
 RUN pip install psutil
+
 WORKDIR /app
-CMD ["python", "app.py"]
+
+CMD ["python", "ramd.py"]
